@@ -1,4 +1,78 @@
 <nav
+  id="header-guest"
+  class="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top border-bottom"
+>
+  <div class="container">
+    <a class="navbar-brand py-0" href="/pages/index.html">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week5/logo.svg"
+        alt="WorkWay職旅logo"
+        class="img-fluid"
+      />
+    </a>
+
+    <!-- 手機版選單 (滿版) -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- 新增關閉按鈕 -->
+      <button
+        class="btn-close d-lg-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      ></button>
+
+      <!-- 選單項目 -->
+      <ul class="navbar-nav mx-lg-auto mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/sever.html">服務方案</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/about.html">關於職旅</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/contact.html">聯絡我們</a>
+        </li>
+      </ul>
+
+      <!-- 新增登入 / 註冊按鈕 -->
+      <a
+        class="btn btn-secondary-50 w-100 py-2 rounded-1 fs-5 d-lg-none mt-auto fw-bold"
+        data-bs-toggle="modal"
+        href="#login"
+        role="button"
+        >登入 / 註冊</a
+      >
+    </div>
+
+    <!-- 漢堡按鈕和桌機版按鈕 -->
+    <div class="d-flex">
+      <button
+        class="navbar-toggler order-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a
+        class="btn btn-outline me-3 border order-1 order-lg-2 py-2 px-4 rounded-1 fs-14 fs-md-6"
+        data-bs-toggle="modal"
+        href="#login"
+        role="button"
+        >登入 / 註冊</a
+      >
+    </div>
+  </div>
+</nav>
+
+<nav
+  id="header-user"
   class="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top border-bottom"
 >
   <div class="container">
@@ -9,29 +83,52 @@
         class="img-fluid"
       />
     </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mb-lg-0 mx-lg-auto">
+
+    <div class="collapse navbar-collapse" id="navbarNavUser">
+      <button
+        class="btn-close d-lg-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavUser"
+        aria-controls="navbarNavUser"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      ></button>
+
+      <ul class="navbar-nav mx-lg-auto mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active px-4" href="#">服務方案</a>
+          <a class="nav-link px-4" href="/pages/sever.html">服務方案</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-4" href="#">關於職旅</a>
+          <a class="nav-link px-4" href="/pages/about.html">關於職旅</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-4" href="#">聯絡我們</a>
+          <a class="nav-link px-4" href="/pages/contact.html">聯絡我們</a>
         </li>
       </ul>
+
+      <a
+        id="logout-btn-mobile"
+        class="btn btn-secondary-50 w-100 py-2 rounded-1 fs-5 d-lg-none mt-auto fw-bold logout-btn"
+        href="#"
+        role="button"
+      >
+        登出
+      </a>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <button
+        class="navbar-toggler navbar-toggler-noborder order-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavUser"
+        aria-controls="navbarNavUser"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <a class="d-flex align-items-center" href="/pages/user.html">
         <img
@@ -39,8 +136,298 @@
           alt="會員圖片"
           class="user-img img-fluid border rounded-circle me-2"
         />
-        <h6 class="my-0">Mokumaru</h6>
+        <h6 class="my-0 fs-14 fs-md-6">Mokumaru</h6>
+      </a>
+
+      <a
+        id="logout-btn-desktop"
+        class="btn btn-outline border py-2 px-4 rounded-1 fs-14 fs-md-6 d-none d-lg-block logout-btn"
+        href="#"
+        role="button"
+      >
+        登出
       </a>
     </div>
   </div>
 </nav>
+
+<div
+  class="modal fade"
+  id="login"
+  aria-hidden="true"
+  aria-labelledby="loginLabel"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-fullscreen-md-down modal-xl modal-custom">
+    <div class="modal-content modal-content-login">
+      <div class="modal-body p-6 p-lg-0">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="d-none d-lg-block col-lg-6 p-lg-0">
+              <div class="login-bg-img"></div>
+            </div>
+            <div class="col-12 col-lg-6 pt-lg-9 pe-6 px-lg-9">
+              <div class="d-flex align-items-center mb-6 mb-md-9">
+                <h5 class="modal-title fs-3 fs-md-2 fw-bold" id="loginLabel">
+                  登入
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="login-btn border-bottom mb-6">
+                <a
+                  class="btn btn-outline border rounded-1 p-3 w-100 mb-4"
+                  href=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week3-4/google.svg"
+                    alt="google"
+                    class="img-fluid login-img"
+                  />
+                  <span class="fs-14 fs-md-6">Google</span>
+                </a>
+                <a
+                  class="btn btn-outline border rounded-1 p-3 w-100 mb-6"
+                  href=""
+                >
+                  <img
+                    src="https://www.vhv.rs/dpng/d/445-4459297_discord-logo-computer-icons-reddit-transparent-background-discord.png"
+                    alt="google"
+                    class="img-fluid login-img"
+                  />
+                  <span class="fs-14 fs-md-6">Discord</span>
+                </a>
+              </div>
+              <div class="login-content">
+                <form>
+                  <div class="mb-3 mb-md-4">
+                    <input
+                      type="text"
+                      class="form-control py-4"
+                      id="account"
+                      placeholder="帳號"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 mb-md-4">
+                    <div class="input-group form-control-noborder">
+                      <input
+                        type="password"
+                        class="form-control py-4"
+                        id="password"
+                        placeholder="密碼"
+                        required
+                      />
+                      <span class="input-group-text" id="togglePassword">
+                        <span class="material-symbols-outlined">
+                          visibility_off
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <a
+                    class="text-end text-natural-50 fs-14 fs-md-6 d-block mb-4"
+                    href="#"
+                    >忘記密碼</a
+                  >
+                  <button
+                    type="submit"
+                    class="btn btn-dark rounded-1 py-3 fs-14 fs-md-6 w-100 mb-6 mb-md-9"
+                  >
+                    <span
+                      >送出
+                      <span class="material-icons-outlined align-bottom">
+                        keyboard_arrow_right
+                      </span></span
+                    >
+                  </button>
+                </form>
+                <div class="d-flex justify-content-center pt-0">
+                  <span class="fs-14 fs-md-6 text-natural-50">不是會員？</span>
+                  <a
+                    class="p-0 btn fs-14 fs-md-6 text-primary-60 text-decoration-underline"
+                    data-bs-target="#login2"
+                    data-bs-toggle="modal"
+                    data-bs-dismiss="modal"
+                  >
+                    快速註冊
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="login2"
+  aria-hidden="true"
+  aria-labelledby="loginLabel2"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-fullscreen-md-down modal-xl modal-custom">
+    <div class="modal-content modal-content-singup">
+      <div class="modal-body p-6 p-lg-0">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="col-12 col-lg-6 pt-lg-9 pe-6 px-lg-9">
+              <div class="d-flex align-items-center mb-6 mb-md-9">
+                <h5 class="modal-title fs-3 fs-md-2 fw-bold" id="loginLabe2">
+                  註冊
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="login-btn border-bottom mb-6">
+                <a
+                  class="btn btn-outline border rounded-1 p-3 w-100 mb-4"
+                  href=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week3-4/google.svg"
+                    alt="google"
+                    class="img-fluid login-img"
+                  />
+                  <span class="fs-14 fs-md-6">Google</span>
+                </a>
+                <a
+                  class="btn btn-outline border rounded-1 p-3 w-100 mb-6"
+                  href=""
+                >
+                  <img
+                    src="https://www.vhv.rs/dpng/d/445-4459297_discord-logo-computer-icons-reddit-transparent-background-discord.png"
+                    alt="google"
+                    class="img-fluid login-img"
+                  />
+                  <span class="fs-14 fs-md-6">Discord</span>
+                </a>
+              </div>
+              <div class="login-content">
+                <form>
+                  <div class="mb-3 mb-md-4">
+                    <input
+                      type="text"
+                      class="form-control py-4"
+                      id="account"
+                      placeholder="帳號"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 mb-md-4">
+                    <div class="input-group form-control-noborder">
+                      <input
+                        type="password"
+                        class="form-control py-4"
+                        id="password"
+                        placeholder="密碼"
+                        required
+                      />
+                      <span class="input-group-text" id="togglePassword">
+                        <span class="material-symbols-outlined">
+                          visibility_off
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mb-3 mb-md-4">
+                    <div class="input-group form-control-noborder">
+                      <input
+                        type="password"
+                        class="form-control py-4"
+                        id="password-2"
+                        placeholder="密碼"
+                        required
+                      />
+                      <span class="input-group-text" id="togglePassword">
+                        <span class="material-symbols-outlined">
+                          visibility_off
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mb-3 mb-md-4">
+                    <div class="input-group form-control-noborder">
+                      <input
+                        type="password"
+                        class="form-control py-4"
+                        id="password-new-check"
+                        placeholder="確認密碼"
+                        required
+                      />
+                      <span class="input-group-text" id="togglePassword">
+                        <span class="material-symbols-outlined">
+                          visibility_off
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label fs-14"
+                      for="flexCheckDefault"
+                    >
+                      我同意
+                      <a
+                        href="#"
+                        class="text-primary-60 text-decoration-underline"
+                        ><span>服務條款</span></a
+                      >
+                      和
+                      <a
+                        href="#"
+                        class="fs-14 text-primary-60 text-decoration-underline"
+                        ><span>隱私政策</span></a
+                      >
+                    </label>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-dark rounded-1 py-3 fs-14 fs-md-6 w-100 mb-4"
+                  >
+                    <span
+                      >送出
+                      <span class="material-icons-outlined align-bottom">
+                        keyboard_arrow_right
+                      </span></span
+                    >
+                  </button>
+                </form>
+                <div class="d-flex justify-content-center pt-0">
+                  <span class="fs-14 fs-md-6 text-natural-50">已經會員？</span>
+                  <a
+                    class="p-0 btn fs-14 fs-md-6 text-primary-60 text-decoration-underline"
+                    data-bs-target="#login"
+                    data-bs-toggle="modal"
+                    data-bs-dismiss="modal"
+                  >
+                    直接登入
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-6 p-lg-0">
+              <div class="singup-bg-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

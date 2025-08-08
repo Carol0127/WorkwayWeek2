@@ -2,3 +2,103 @@
   width: 44px;
   height: 44px;
 }
+
+.login-img {
+  width: 20px;
+  height: 20px;
+}
+
+.modal-custom {
+  display: flex;
+  justify-content: center;
+
+  .modal-title {
+    text-align: center;
+    flex-grow: 1; /* 讓標題佔據剩餘空間 */
+  }
+}
+
+.form-control-noborder input {
+  border-right: none;
+}
+
+.form-control-noborder .input-group-text {
+  background: var(--bs-body-bg);
+}
+
+.login-bg-img {
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/login.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  border-top-left-radius: 0.5rem; /* 左上角 */
+  border-bottom-left-radius: 0.5rem; /* 左下角 */
+}
+
+.singup-bg-img {
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/register.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  // border-top-left-radius: 0.5rem; /* 左上角 */
+  // border-bottom-left-radius: 0.5rem; /* 左下角 */
+}
+
+.modal-content-login {
+  /* 這個 class 讓子元素（例如背景圖片）的直角邊緣不會超出父元素（modal-content）的圓角邊界。 */
+  overflow: hidden;
+  height: 720px;
+}
+
+.modal-content-singup {
+  /* 這個 class 讓子元素（例如背景圖片）的直角邊緣不會超出父元素（modal-content）的圓角邊界。 */
+  overflow: hidden;
+  height: 770px;
+}
+
+.navbar-toggler-noborder {
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    width: 100%;
+    position: fixed; /* 使用 fixed 定位，讓它滿版 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bs-light);
+    height: 100vh; /* 佔據整個視窗高度 */
+    display: flex;
+    flex-direction: column; /* 讓內容垂直排列 */
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    padding: 2rem;
+
+    transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    margin-top: 16px;
+  }
+
+  .nav-item {
+    padding: 1rem 0;
+    margin-bottom: 24px;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1051;
+  }
+}

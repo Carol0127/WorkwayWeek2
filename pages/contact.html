@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/scss/all.scss" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Workway職旅|聯絡我們</title>
+  </head>
+
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="bg-natural-95">
+      <div class="container py-9 py-lg-12">
+        <div class="row justify-content-center">
+          <div class="col-12 mb-lg-9 mb-6 position-relative">
+            <h1 class="fs-lg-2 fs-3 fw-bold mb-4 mb-lg-6 text-center">
+              聯絡我們
+            </h1>
+            <p class="text-natural-50 fs-6 fs-lg-18 text-center">
+              每一封郵件，我們都會親自回覆。每一通電話，都是新可能的開始。
+            </p>
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/contact/form-top.svg"
+              alt="form-top"
+              class="position-absolute top-100 end-0 translate-middle d-none d-lg-block p-8"
+            />
+          </div>
+          <div class="col-md-10">
+            <div class="card-rounded shadow bg-white p-9">
+              <form action="./user.html#pills-plan-tab">
+                <!--基本資料-->
+                <div
+                  class="d-md-flex flex-lg-nowrap gap-4 pb-lg-9 mb-lg-9 pb-6 mb-6 border-bottom"
+                >
+                  <!--左側-->
+                  <div
+                    class="form-content justify-content-between align-items-center d-md-block d-flex flex-shrink-0 mb-4 mb-lg-0"
+                  >
+                    <h2 class="fs-5 fs-lg-4 mb-2">基本資料</h2>
+                    <p class="text-natural-50">
+                      欄位皆為<span
+                        class="badge rounded-pill text-bg-danger ms-1"
+                        >必填</span
+                      >
+                    </p>
+                  </div>
+                  <!--右側-->
+                  <div class="w-100">
+                    <div class="CurrentCareer">
+                      <div class="info-name mb-4 mb-md-6">
+                        <div class="form-floating">
+                          <input
+                            type="name"
+                            class="form-control"
+                            id="info-name"
+                            placeholder="name"
+                          />
+                          <label for="info-name">姓名</label>
+                        </div>
+                      </div>
+                      <div class="info-mail mb-4 mb-md-6">
+                        <div class="form-floating">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="info-mail"
+                            placeholder="mail"
+                          />
+                          <label for="info-mail">信箱</label>
+                          <p class="text-natural-50 fs-14">
+                            盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信
+                          </p>
+                        </div>
+                      </div>
+                      <div class="info-phone mb-4 mb-md-6">
+                        <div class="form-floating">
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="info-phone"
+                            placeholder="tel"
+                          />
+                          <label for="info-phone">聯絡電話</label>
+                          <p class="text-natural-50 fs-14">
+                            我們不會以電話主動聯繫您，告知您要至ATM操作轉帳
+                          </p>
+                        </div>
+                      </div>
+                      <div class="CurrentCareer-industry">
+                        <div class="dropdown">
+                          <button
+                            class="form-select text-start fs-14 fs-md-6 py-3"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            目前職業/工作身分
+                          </button>
+                          <ul
+                            class="dropdown-menu w-100 mt-2"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">科技</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">媒體</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">教育</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">金融</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">醫療健康</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">零售製造</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">服務業</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">藝術創意</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">非營利組織</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--諮詢需求-->
+                <div
+                  class="d-md-flex flex-lg-nowrap gap-4 pb-lg-9 mb-lg-9 pb-6 mb-6 border-bottom"
+                >
+                  <!--左側-->
+                  <div
+                    class="form-content justify-content-between align-items-center d-md-block d-flex flex-shrink-0 mb-4 mb-lg-0"
+                  >
+                    <h2 class="fs-5 fs-lg-4 mb-2">諮詢需求</h2>
+                    <p class="fs-14 fs-lg-6 text-natural-50">
+                      欄位皆為<span
+                        class="badge rounded-pill text-bg-danger ms-1"
+                        >必填</span
+                      >
+                    </p>
+                  </div>
+                  <!--右側-->
+                  <div>
+                    <div class="CareerPlan">
+                      <div class="CareerPlan-challenges mb-4 mb-lg-6">
+                        <label class="form-label">諮詢主題</label>
+                        <div class="px-0 px-lg-2">
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="職涯探索與方向"
+                              id="CareerPlan-challenges-1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="CareerPlan-challenges-1"
+                            >
+                              職涯探索與方向
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="接案與技能變現"
+                              id="CareerPlan-challenges-2"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="CareerPlan-challenges-2"
+                            >
+                              接案與技能變現
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="品牌與內容經營"
+                              id="CareerPlan-challenges-3"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="CareerPlan-challenges-3"
+                            >
+                              品牌與內容經營
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="遠端工作與數位游牧"
+                              id="CareerPlan-challenges-4"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="CareerPlan-challenges-4"
+                            >
+                              遠端工作與數位游牧
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="收入與時間管理"
+                              id="CareerPlan-challenges-5"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="CareerPlan-challenges-5"
+                            >
+                              收入與時間管理
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="其他（請填寫下題）"
+                              id="CareerPlan-challenges-6"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="CareerPlan-challenges-6"
+                            >
+                              其他（請填寫下題）
+                            </label>
+                          </div>
+                          <p class="text-natural-50 fs-14">
+                            可複選，讓我們更了解你的狀況，安排最適合的顧問與建議。
+                          </p>
+                        </div>
+                      </div>
+                      <div class="CareerPlan-shortterm mb-4 mb-lg-6">
+                        <div class="form-floating">
+                          <textarea
+                            class="form-control"
+                            placeholder="您目前面臨的主要挑戰"
+                            id="CareerPlan-Shortterm"
+                            style="height: 160px"
+                            maxlength="300"
+                          ></textarea>
+                          <label for="CareerPlan-Shortterm"
+                            >您目前面臨的主要挑戰</label
+                          >
+                        </div>
+                      </div>
+                      <div class="CareerPlan-midtolongterm mb-4 mb-lg-6">
+                        <div class="form-floating">
+                          <textarea
+                            class="form-control"
+                            placeholder="期望達成的目標"
+                            id="CareerPlan-Midtolongterm"
+                            style="height: 160px"
+                            maxlength="300"
+                          ></textarea>
+                          <label for="CareerPlan-Midtolongterm"
+                            >期望達成的目標</label
+                          >
+                        </div>
+                      </div>
+                      <div class="CurrentCareer-industry">
+                        <div class="dropdown">
+                          <button
+                            class="form-select text-start fs-14 fs-md-6 py-3"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            期望諮詢的專家
+                          </button>
+                          <ul
+                            class="dropdown-menu w-100 mt-2"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">科技</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">媒體</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">教育</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">金融</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">醫療健康</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">零售製造</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">服務業</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">藝術創意</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">非營利組織</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--聯絡偏好區塊-->
+                <div class="d-md-flex flex-lg-nowrap gap-4 pb-lg-9 pb-6">
+                  <!--左側-->
+                  <div
+                    class="form-content align-items-center justify-content-between d-md-block d-flex flex-shrink-0 mb-4 mb-lg-0"
+                  >
+                    <h2 class="fs-5 fs-lg-4 mb-2">聯絡偏好</h2>
+                    <p class="fs-14 fs-lg-6 text-natural-50">欄位皆為選填</p>
+                  </div>
+                  <!--右側-->
+                  <div>
+                    <div class="info-gender mb-4 mb-md-6">
+                      <label class="form-label">偏好聯絡方式</label>
+                      <div class="px-2">
+                        <div class="form-check form-check-inline mb-2 me-4">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            value="信箱"
+                            id="info-gender-1"
+                            name="info-gender"
+                            checked
+                          />
+                          <label class="form-check-label" for="info-gender-1"
+                            >信箱</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline mb-2 me-4">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            value="電話"
+                            id="info-gender-2"
+                            name="info-gender"
+                          />
+                          <label class="form-check-label" for="info-gender-2"
+                            >電話</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline mb-2 me-4">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            value="LINE"
+                            id="info-gender-3"
+                            name="info-gender"
+                          />
+                          <label class="form-check-label" for="info-gender-3"
+                            >LINE</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline mb-2 me-4">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            value="Discord"
+                            id="info-gender-4"
+                            name="info-gender"
+                          />
+                          <label class="form-check-label" for="info-gender-4"
+                            >Discord</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="CareerPlan-challenges mb-4 mb-lg-6">
+                      <label class="form-label">偏好聯絡時段</label>
+                      <div class="px-0 px-lg-2">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="平日上午(9:00-12:00)"
+                            id="CareerPlan-challenges-1"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-1"
+                          >
+                            平日上午(9:00-12:00)
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="平日下午(13:00-17:00)"
+                            id="CareerPlan-challenges-2"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-2"
+                          >
+                            平日下午(13:00-17:00)
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="平日晚上(18:00-21:00)"
+                            id="CareerPlan-challenges-3"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-3"
+                          >
+                            平日晚上(18:00-21:00)
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="週末上午(9:00-12:00)"
+                            id="CareerPlan-challenges-4"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-4"
+                          >
+                            週末上午(9:00-12:00)
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="週末下午(13:00-17:00)"
+                            id="CareerPlan-challenges-5"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-5"
+                          >
+                            週末下午(13:00-17:00)
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="週末晚上(18:00-21:00)"
+                            id="CareerPlan-challenges-6"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-6"
+                          >
+                            週末晚上(18:00-21:00)
+                          </label>
+                        </div>
+                        <p class="text-natural-50 fs-14">
+                          建議您可以勾選 2 個時段以上
+                        </p>
+                      </div>
+                    </div>
+                    <div class="info-birth mb-4 mb-md-6">
+                      <div class="form-floating">
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="info-birth"
+                          placeholder="birth"
+                        />
+                        <label for="info-birth">預約諮詢時間</label>
+                      </div>
+                    </div>
+                    <div class="CareerPlan-challenges mb-4 mb-lg-6">
+                      <label class="form-label">如何得知我們</label>
+                      <div class="px-0 px-lg-2">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Google 搜尋"
+                            id="CareerPlan-challenges-1"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-1"
+                          >
+                            Google 搜尋
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Instagram"
+                            id="CareerPlan-challenges-2"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-2"
+                          >
+                            Instagram
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Facebook"
+                            id="CareerPlan-challenges-3"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-3"
+                          >
+                            Facebook
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Threads"
+                            id="CareerPlan-challenges-4"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-4"
+                          >
+                            Threads
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="YouTube"
+                            id="CareerPlan-challenges-5"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-5"
+                          >
+                            YouTube
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Podcast / 節目推薦"
+                            id="CareerPlan-challenges-6"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-6"
+                          >
+                            Podcast / 節目推薦
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="朋友或同事推薦"
+                            id="CareerPlan-challenges-6"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-6"
+                          >
+                            朋友或同事推薦
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="曾參加職旅活動 / 工作坊"
+                            id="CareerPlan-challenges-6"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-6"
+                          >
+                            曾參加職旅活動 / 工作坊
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="職涯顧問介紹"
+                            id="CareerPlan-challenges-6"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-6"
+                          >
+                            職涯顧問介紹
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="其他（請填寫下題）"
+                            id="CareerPlan-challenges-6"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-6"
+                          >
+                            其他（請填寫下題）
+                          </label>
+                        </div>
+                        <p class="text-natural-50 fs-14">最多勾選 3 個</p>
+                      </div>
+                    </div>
+                    <div class="CurrentCareer-Introduce mb-4 mb-lg-6">
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control pt-9"
+                          placeholder="有什麼其他想告訴我們的事情嗎？（最多300字）"
+                          id="CurrentCareer-Introduce"
+                          style="height: 160px"
+                          maxlength="300"
+                        ></textarea>
+                        <label
+                          class="text-wrap fs-14 fs-lg-6"
+                          for="CurrentCareer-Introduce"
+                          >有什麼其他想告訴我們的事情嗎？（最多300字）</label
+                        >
+                      </div>
+                    </div>
+                    <div class="CareerPlan-challenges">
+                      <div class="px-0 px-lg-2">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="我願意接收職旅最新資訊和專業內容"
+                            id="CareerPlan-challenges-1"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-1"
+                          >
+                            我願意接收職旅最新資訊和專業內容
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="我同意 服務條款 和 隱私政策"
+                            id="CareerPlan-challenges-2"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="CareerPlan-challenges-2"
+                          >
+                            我同意
+                            <a
+                              class="text-primary text-decoration-underline"
+                              href="/pages/user-role.html"
+                              >服務條款</a
+                            >
+                            和
+                            <a
+                              class="text-primary text-decoration-underline"
+                              href="/pages/policy.html"
+                              >隱私政策</a
+                            >
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="submit d-flex flex-wrap flex-lg-nowrap justify-content-center"
+                >
+                  <a
+                    href="#"
+                    role="button"
+                    class="btn btn-outline border col-12 col-lg-auto mb-4 mb-lg-0 me-0 me-lg-6 p-3 px-md-5 fs-14 fs-md-6"
+                  >
+                    重新填寫
+                    <span class="material-icons-outlined align-bottom">
+                      keyboard_arrow_right
+                    </span>
+                  </a>
+                  <button
+                    type="submit"
+                    class="col-12 col-lg-auto btn btn-dark p-3 px-md-5 fs-14 fs-md-6"
+                  >
+                    確認送出
+                    <span class="material-icons-outlined align-bottom">
+                      keyboard_arrow_right
+                    </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const headerGuest = document.getElementById("header-guest");
+        const headerUser = document.getElementById("header-user");
+        const loginModal = document.getElementById("login");
+        const loginForm = document.querySelector("#login form");
+
+        // 在頁面載入時，直接強制設定 display 屬性，確保只有訪客導覽列顯示
+        headerGuest.style.display = "block";
+        headerUser.style.display = "none";
+
+        // 輔助函式：切換導覽列狀態
+        function setLoggedInState(isLoggedIn) {
+          if (isLoggedIn) {
+            headerGuest.style.display = "none";
+            headerUser.style.display = "block";
+          } else {
+            headerGuest.style.display = "block";
+            headerUser.style.display = "none";
+          }
+        }
+
+        // 處理登入表單提交事件
+        if (loginForm) {
+          loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // 模擬登入成功後的操作 (實際專案中，這裡應放入 AJAX 請求)
+            setLoggedInState(true);
+
+            // 1. 關閉模態框
+            const bsModal = bootstrap.Modal.getOrCreateInstance(loginModal);
+            bsModal.hide();
+
+            // 2. 關閉訪客導覽列的滿版選單
+            const navbarCollapse = headerGuest.querySelector("#navbarNav");
+            if (navbarCollapse) {
+              const bsCollapse =
+                bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+              bsCollapse.hide();
+            }
+
+            // 3. 模擬頁面跳轉 (如果需要)
+            // window.location.href = '/pages/user.html';
+          });
+        }
+
+        // 處理模態框關閉事件 (如果使用者點擊 X 或背景)
+        if (loginModal) {
+          loginModal.addEventListener("hide.bs.modal", () => {
+            // 確保在模態框關閉時，訪客導覽列的滿版選單也關閉
+            const navbarCollapse = headerGuest.querySelector("#navbarNav");
+            if (navbarCollapse) {
+              const bsCollapse =
+                bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+              bsCollapse.hide();
+            }
+          });
+        }
+
+        // 處理使用者導覽列中的登出邏輯 (假設你有登出按鈕)
+        const logoutBtn = headerUser.querySelector(".logout-btn");
+        if (logoutBtn) {
+          logoutBtn.addEventListener("click", () => {
+            setLoggedInState(false);
+            // 頁面跳轉回首頁
+            // window.location.href = '/pages/index.html';
+          });
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // 取得需要水平滾動的容器元素
+        const container = document.getElementById("drag-scroll-container");
+
+        if (container) {
+          // --- 1. Drag to Scroll 的變數 ---
+          let isDragging = false;
+          let startX;
+          let startScrollLeft;
+
+          // --- 2. Wheel to Scroll 的監聽器 ---
+          container.addEventListener("wheel", (e) => {
+            // 阻止滾輪的預設行為 (垂直滾動頁面)
+            e.preventDefault();
+
+            // 根據滾輪的垂直滾動量 (e.deltaY)，改變容器的水平滾動位置
+            // 乘上一個係數可以調整滾動速度
+            container.scrollLeft += e.deltaY * 0.8; // 0.8 是一個示範速度，可以調整
+          });
+
+          // --- 3. Drag to Scroll 的事件監聽器 ---
+          container.addEventListener("mousedown", (e) => {
+            e.preventDefault();
+            isDragging = true;
+            container.classList.add("active");
+            startX = e.pageX - container.offsetLeft;
+            startScrollLeft = container.scrollLeft;
+          });
+
+          container.addEventListener("mouseup", () => {
+            isDragging = false;
+            container.classList.remove("active");
+          });
+
+          container.addEventListener("mouseleave", () => {
+            isDragging = false;
+            container.classList.remove("active");
+          });
+
+          container.addEventListener("mousemove", (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+
+            const x = e.pageX - container.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            container.scrollLeft = startScrollLeft - walk;
+          });
+
+          // --- 4. 觸控事件 (可選) ---
+          container.addEventListener("touchstart", (e) => {
+            isDragging = true;
+            startX = e.touches[0].pageX - container.offsetLeft;
+            startScrollLeft = container.scrollLeft;
+          });
+
+          container.addEventListener("touchmove", (e) => {
+            if (!isDragging) return;
+
+            const x = e.touches[0].pageX - container.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            container.scrollLeft = startScrollLeft - walk;
+          });
+
+          container.addEventListener("touchend", () => {
+            isDragging = false;
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

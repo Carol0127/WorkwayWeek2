@@ -1,0 +1,52 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
+.custom-top-right-radius {
+  border-top-right-radius: 12px;
+}
+
+.custom-top-left-radius-lg {
+  border-top-left-radius: 20px;
+}
+
+.custom-top-left-radius {
+  border-top-left-radius: 12px;
+}
+
+.custom-bottom-right-radius {
+  border-bottom-right-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .custom-top-left-radius-lg {
+    border-top-left-radius: 12px;
+  }
+}
+
+.btn-dark:hover {
+  border: 1px solid $secondary-50;
+  color: $natural-10;
+  background-color: $secondary-50;
+}
+
+.btn-outline:hover {
+  border: 1px solid $natural-90;
+  background-color: $natural-90;
+  color: $natural-10;
+}
+
+.btn {
+  @media (max-width: 768px) {
+    border-radius: 12px;
+  }
+}

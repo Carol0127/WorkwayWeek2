@@ -1,0 +1,24 @@
+.card-parent-img {
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  @media (max-width: 768px) {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+}
+
+.card-content-sm {
+  max-width: 320px;
+}
+
+.list-company li {
+  border-bottom: 1px solid $natural-85;
+  padding: 24px 16px;
+}
+
+.company-bg {
+  height: 979px;
+  @media (max-width: 768px) {
+    height: 895px;
+  }
+}
