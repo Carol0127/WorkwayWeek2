@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Workway職旅|關於職旅</title>
+    <link rel="stylesheet" crossorigin href="/WorkwayWeek2/assets/all-DH7BrSp5.css">
+  </head>
+  <body>
+    <nav
+  id="header-guest"
+  class="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top border-bottom"
+>
+  <div class="container">
+    <a class="navbar-brand py-0" href="/pages/user.html">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week5/logo.svg"
+        alt="WorkWay職旅logo"
+        class="img-fluid"
+      />
+    </a>
+
+    <!-- 手機版選單 (滿版) -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- 新增關閉按鈕 -->
+      <button
+        class="btn-close d-lg-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      ></button>
+
+      <!-- 選單項目 -->
+      <ul class="navbar-nav mx-lg-auto mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/sever.html">服務方案</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/about.html">關於職旅</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/contact.html">聯絡我們</a>
+        </li>
+      </ul>
+
+      <!-- 新增登入 / 註冊按鈕 -->
+      <a
+        class="btn btn-secondary-50 w-100 py-2 rounded-1 fs-5 d-lg-none mt-auto fw-bold"
+        data-bs-toggle="modal"
+        href="#login"
+        role="button"
+        >登入 / 註冊</a
+      >
+    </div>
+
+    <!-- 漢堡按鈕和桌機版按鈕 -->
+    <div class="d-flex">
+      <button
+        class="navbar-toggler order-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a
+        class="btn btn-outline me-3 border order-1 order-lg-2 py-2 px-4 rounded-1 fs-14 fs-md-6"
+        data-bs-toggle="modal"
+        href="#login"
+        role="button"
+        >登入 / 註冊</a
+      >
+    </div>
+  </div>
+</nav>
+
+<nav
+  id="header-user"
+  class="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top border-bottom"
+>
+  <div class="container">
+    <a class="navbar-brand py-0" href="/pages/uesr.html">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week5/logo.svg"
+        alt="WorkWay職旅logo"
+        class="img-fluid"
+      />
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNavUser">
+      <button
+        class="btn-close d-lg-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavUser"
+        aria-controls="navbarNavUser"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      ></button>
+
+      <ul class="navbar-nav mx-lg-auto mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/sever.html">服務方案</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/about.html">關於職旅</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/contact.html">聯絡我們</a>
+        </li>
+      </ul>
+
+      <a
+        id="logout-btn-mobile"
+        class="btn btn-secondary-50 w-100 py-2 rounded-1 fs-5 d-lg-none mt-auto fw-bold logout-btn"
+        href="#"
+        role="button"
+      >
+        登出
+      </a>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <button
+        class="navbar-toggler navbar-toggler-noborder order-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavUser"
+        aria-controls="navbarNavUser"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="d-flex align-items-center" href="/pages/user.html">
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true"
+          alt="會員圖片"
+          class="user-img img-fluid border rounded-circle me-2"
+        />
+        <h6 class="my-0 fs-14 fs-md-6">Mokumaru</h6>
+      </a>
+
+      <a
+        id="logout-btn-desktop"
+        class="btn btn-outline border py-2 px-4 rounded-1 fs-14 fs-md-6 d-none d-lg-block logout-btn"
+        href="#"
+        role="button"
+      >
+        登出
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div
+  class="modal fade"
+  id="login"
+  aria-hidden="true"
+  aria-labelledby="loginLabel"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-fullscreen-md-down modal-xl modal-custom">
+    <div class="modal-content modal-content-login">
+      <div class="modal-body p-6 p-lg-0">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="d-none d-lg-block col-lg-6 p-lg-0">
+              <div class="login-bg-img"></div>
+            </div>
+            <div class="col-12 col-lg-6 pt-lg-9 pe-6 px-lg-9">
+              <div class="d-flex align-items-center mb-6 mb-md-9">
+                <h5 class="modal-title fs-3 fs-md-2 fw-bold" id="loginLabel">
+                  登入
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="login-btn border-bottom mb-6">
+                <a
+                  class="btn btn-outline border rounded-1 p-3 w-100 mb-4"
+                  href=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week3-4/google.svg"
+                    alt="google"
+                    class="img-fluid login-img"
+                  />
+                  <span class="fs-14 fs-md-6">Google</span>
+                </a>
+                <a
+                  class="btn btn-outline border rounded-1 p-3 w-100 mb-6"
+                  href=""
+                >
+                  <img
+                    src="https://www.vhv.rs/dpng/d/445-4459297_discord-logo-computer-icons-reddit-transparent-background-discord.png"
+                    alt="google"
+                    class="img-fluid login-img"
+                  />
+                  <span class="fs-14 fs-md-6">Discord</span>
+                </a>
+              </div>
+              <div class="login-content">
+                <form>
+                  <div class="mb-3 mb-md-4">
+                    <input
+                      type="text"
+                      class="form-control py-4"
+                      id="account"
+                      placeholder="帳號"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 mb-md-4">
+                    <div class="input-group form-control-noborder">
+                      <input
+                        type="password"
+                        class="form-control py-4"
+                        id="password"
+                        placeholder="密碼"
+                        required
+                      />
+                      <span class="input-group-text" id="togglePassword">
+                        <span class="material-symbols-outlined">
+                          visibility_off
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <a
+                    class="text-end text-natural-50 fs-14 fs-md-6 d-block mb-4"
+                    href="#"
+                    >忘記密碼</a
+                  >
+                  <button
+                    type="submit"
+                    class="btn btn-dark rounded-1 py-3 fs-14 fs-md-6 w-100 mb-6 mb-md-9"
+                  >
+                    <span
+                      >送出
+                      <span class="material-icons-outlined align-bottom">
+                        keyboard_arrow_right
+                      </span></span
+                    >
+                  </button>
+                </form>
+                <div class="d-flex justify-content-center pt-0">
+                  <span class="fs-14 fs-md-6 text-natural-50">不是會員？</span>
+                  <a
+                    class="p-0 btn fs-14 fs-md-6 text-primary-60 text-decoration-underline"
+                    data-bs-target="#login2"
+                    data-bs-toggle="modal"
+                    data-bs-dismiss="modal"
+                  >
+                    快速註冊
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="login2"
+  aria-hidden="true"
+  aria-labelledby="loginLabel2"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-fullscreen-md-down modal-xl modal-custom">
+    <div class="modal-content modal-content-singup">
+      <div class="modal-body p-6 p-lg-0">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="col-12 col-lg-6 pt-lg-9 pe-6 px-lg-9">
+              <div class="d-flex align-items-center mb-6 mb-md-9">
+                <h5 class="modal-title fs-3 fs-md-2 fw-bold" id="loginLabe2">
+                  註冊
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="login-btn border-bottom mb-6">
+                <a
+                  class="btn btn-outline border rounded-1 p-3 w-100 mb-4"
+                  href=""
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week3-4/google.svg"
+                    alt="google"
+                    class="img-fluid login-img"
+                  />
+                  <span class="fs-14 fs-md-6">Google</span>
+                </a>
+                <a
+                  class="btn btn-outline border rounded-1 p-3 w-100 mb-6"
+                  href=""
+                >
+                  <img
+                    src="https://www.vhv.rs/dpng/d/445-4459297_discord-logo-computer-icons-reddit-transparent-background-discord.png"
+                    alt="google"
+                    class="img-fluid login-img"
+                  />
+                  <span class="fs-14 fs-md-6">Discord</span>
+                </a>
+              </div>
+              <div class="login-content">
+                <form>
+                  <div class="mb-3 mb-md-4">
+                    <input
+                      type="text"
+                      class="form-control py-4"
+                      id="account"
+                      placeholder="帳號"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 mb-md-4">
+                    <div class="input-group form-control-noborder">
+                      <input
+                        type="password"
+                        class="form-control py-4"
+                        id="password"
+                        placeholder="密碼"
+                        required
+                      />
+                      <span class="input-group-text" id="togglePassword">
+                        <span class="material-symbols-outlined">
+                          visibility_off
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mb-3 mb-md-4">
+                    <div class="input-group form-control-noborder">
+                      <input
+                        type="password"
+                        class="form-control py-4"
+                        id="password-2"
+                        placeholder="密碼"
+                        required
+                      />
+                      <span class="input-group-text" id="togglePassword">
+                        <span class="material-symbols-outlined">
+                          visibility_off
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mb-3 mb-md-4">
+                    <div class="input-group form-control-noborder">
+                      <input
+                        type="password"
+                        class="form-control py-4"
+                        id="password-new-check"
+                        placeholder="確認密碼"
+                        required
+                      />
+                      <span class="input-group-text" id="togglePassword">
+                        <span class="material-symbols-outlined">
+                          visibility_off
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label fs-14"
+                      for="flexCheckDefault"
+                    >
+                      我同意
+                      <a
+                        href="#"
+                        class="text-primary-60 text-decoration-underline"
+                        ><span>服務條款</span></a
+                      >
+                      和
+                      <a
+                        href="#"
+                        class="fs-14 text-primary-60 text-decoration-underline"
+                        ><span>隱私政策</span></a
+                      >
+                    </label>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-dark rounded-1 py-3 fs-14 fs-md-6 w-100 mb-4"
+                  >
+                    <span
+                      >送出
+                      <span class="material-icons-outlined align-bottom">
+                        keyboard_arrow_right
+                      </span></span
+                    >
+                  </button>
+                </form>
+                <div class="d-flex justify-content-center pt-0">
+                  <span class="fs-14 fs-md-6 text-natural-50">已經會員？</span>
+                  <a
+                    class="p-0 btn fs-14 fs-md-6 text-primary-60 text-decoration-underline"
+                    data-bs-target="#login"
+                    data-bs-toggle="modal"
+                    data-bs-dismiss="modal"
+                  >
+                    直接登入
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-6 p-lg-0">
+              <div class="singup-bg-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="main">
+      <div class="bg-dot">
+        <div class="container-lg py-9 py-lg-12 position-relative">
+          <div class="row">
+            <div class="col-12 d-flex flex-column align-items-center">
+              <h1 class="fs-lg-1 fs-2 fw-bold mb-6 mb-lg-9 text-center">
+                關於職旅
+              </h1>
+              <div class="col-8">
+                <p class="fs-6 fs-lg-18 text-center text-natural-50">
+                  職旅 WorkWay
+                  匯集了來自不同領域、擁有豐富實戰經驗的自由工作者與數位遊牧專家。根據你的需求和階段，我們提供一對一諮詢。
+                </p>
+                <p class="fs-6 fs-lg-18 text-center text-natural-50">
+                  無論你是剛開始探索期，還是已在轉型路上遇到瓶頸，我們都能提供適合你的專業指導。
+                </p>
+              </div>
+              <img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/service/banner-person.svg"
+                alt=""
+                class="d-none d-lg-flex position-absolute top-84 start-100 translate-middle"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-lg d-flex justify-content-center pt-9 pb-6 pb-lg-9 pt-lg-12"
+      >
+        <div class="row">
+          <h2 class="fs-lg-2 fs-3 fw-bold mb-lg-6 mb-4 text-center">
+            精實的職旅夥伴
+          </h2>
+          <p class="fs-6 fs-lg-18 text-natural-50 text-center">
+            我們相信，最好的指導來自於那些已經走過你想走的路，並願意伸出手拉你一把的人。
+          </p>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="custom-container d-flex flex-wrap align-items-center">
+          <div
+            class="col-12 d-content hide-scrollbar-x overflow-x-auto pb-6 pb-lg-9"
+          >
+            <div class="crad-group d-flex flex-nowrap">
+              <div
+                class="card card-rounded shadow card-content-sm flex-shrink-0 me-6"
+              >
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/mentor-1.png?raw=true"
+                  class="card-parent-img"
+                  alt="mentor-1"
+                />
+                <div class="card-body">
+                  <span class="text-natural-50 fs-14 fs-lg-6 mb-2"
+                    >數位遊牧先驅</span
+                  >
+                  <h3 class="fs-4 mb-4 fw-bold">陳志遠 Ethan Chen</h3>
+                  <div class="badge-group">
+                    <div class="row m-0 row-cols-2 gy-1">
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border me-2"
+                        ># 遠端工作策略</span
+                      >
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border me-2"
+                        ># 數位遊牧生活設計</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card card-rounded shadow card-content-sm flex-shrink-0 me-6"
+              >
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/mentor-2.png?raw=true"
+                  class="card-parent-img"
+                  alt="mentor-2"
+                />
+                <div class="card-body">
+                  <span class="text-natural-50 fs-14 fs-lg-6 mb-2"
+                    >個人品牌策略專家</span
+                  >
+                  <h3 class="fs-4 mb-4 fw-bold">林曉彤 Clara Lin</h3>
+                  <div class="badge-group">
+                    <div class="row m-0 row-cols-2 gy-1">
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border me-2"
+                        ># 個人品牌建立</span
+                      >
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border me-2"
+                        ># 內容行銷策略</span
+                      >
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border"
+                        ># 故事行銷</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card card-rounded shadow card-content-sm flex-shrink-0 me-6"
+              >
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/mentor-3.png?raw=true"
+                  class="card-parent-img"
+                  alt="mentor-3"
+                />
+                <div class="card-body">
+                  <span class="text-natural-50 fs-14 fs-lg-6 mb-2"
+                    >財務自由規劃顧問</span
+                  >
+                  <h3 class="fs-4 mb-4 fw-bold">王建明 Marcus</h3>
+                  <div class="badge-group">
+                    <div class="row m-0 row-cols-2 gy-1">
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border me-2"
+                        ># 稅務優化</span
+                      >
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border me-2"
+                        ># 被動收入建立</span
+                      >
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border"
+                        ># 現金流管理</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card card-rounded shadow card-content-sm flex-shrink-0 me-6"
+              >
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/mentor-4.png?raw=true"
+                  class="card-parent-img"
+                  alt="mentor-4"
+                />
+                <div class="card-body">
+                  <span class="text-natural-50 fs-14 fs-lg-6 mb-2"
+                    >創意接案與多元收入專家</span
+                  >
+                  <h3 class="fs-4 mb-4 fw-bold">張雅琳 Ariel</h3>
+                  <div class="badge-group">
+                    <div class="row m-0 row-cols-2 gy-1">
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border me-2"
+                        ># 創意變現策略</span
+                      >
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border me-2"
+                        ># 線上課程開發</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card card-rounded shadow card-content-sm flex-shrink-0 me-6"
+              >
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/mentor-5.png?raw=true"
+                  class="card-parent-img"
+                  alt="mentor-5"
+                />
+                <div class="card-body">
+                  <span class="text-natural-50 fs-14 fs-lg-6 mb-2"
+                    >遠端工作技術顧問</span
+                  >
+                  <h3 class="fs-4 mb-4 fw-bold">李俊宏 Kevin Lee</h3>
+                  <div class="badge-group">
+                    <div class="row m-0 row-cols-2 gy-1">
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border me-2"
+                        ># 專案管理自動化</span
+                      >
+                      <span
+                        class="w-auto px-2 py-1 fs-14 text-natural-50 rounded-2 border me-2"
+                        ># 虛擬團隊管理</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-lg">
+        <div
+          class="col-12 card-rounded bg-primary pt-4 pb-6 px-6 px-lg-9 pt-lg-6 pb-lg-9"
+        >
+          <div class="row flex-column align-items-center">
+            <button
+              type="button"
+              class="w-auto btn bg-white position-relative fw-bold text-primary fs-lg-5 fs-18 mb-4 mb-lg-6"
+            >
+              團隊承諾
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                />
+              </svg>
+            </button>
+            <p
+              class="w-md-75 fs-14 fs-lg-6 text-white text-center mb-6 mb-lg-9"
+            >
+              我們不只是顧問，更是你職業轉型路上的夥伴與同行者。我們深知轉型過程中的不確定與恐懼，也經歷過停滯不前的困境。正因如此，我們更懂得如何陪你走過這段旅程，不只指引方向，更與你並肩同行。
+            </p>
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/about/text-pc.svg"
+              alt=""
+              class="w-75 d-none d-md-block"
+            />
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/about/text-mb.svg"
+              alt="about-text"
+              class="d-md-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bg-natural-95 company-bg">
+        <div class="container-lg py-9 py-lg-12">
+          <h3 class="fw-bold fs-lg-2 fs-3 text-center mb-6 mb-lg-9">
+            公司資訊
+          </h3>
+          <div class="card-rounded shadow bg-white p-lg-9 p-6">
+            <ul class="list-group list-company list-group-flush mb-6 mb-lg-9">
+              <li class="list-group-item">
+                <div class="d-flex">
+                  <span
+                    class="fw-bold text-nowrap w-25 fs-14 fs-lg-6 me-6 text-natural-50"
+                    >公司位置</span
+                  >
+                  <span class="fw-medium text-black fs-14 fs-lg-6"
+                    >110台北市信義區信義路五段7號</span
+                  >
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex">
+                  <span
+                    class="fw-bold text-nowrap w-25 fs-14 fs-lg-6 me-6 text-natural-50"
+                    >負責人員</span
+                  >
+                  <span class="fw-medium text-black fs-14 fs-lg-6">張世明</span>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex">
+                  <span
+                    class="fw-bold text-nowrap w-25 fs-14 fs-lg-6 me-6 text-natural-50"
+                    >聯絡專線</span
+                  >
+                  <span class="fw-medium text-black fs-14 fs-lg-6"
+                    >02-2758-6600</span
+                  >
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex">
+                  <span
+                    class="fw-bold text-nowrap w-25 fs-14 fs-lg-6 me-6 text-natural-50"
+                    >營業時間</span
+                  >
+                  <span class="fw-medium w-75 text-black fs-14 fs-lg-6"
+                    >週一至週五10:00～18:00（國定假日休息）</span
+                  >
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex">
+                  <span
+                    class="fw-bold text-nowrap w-25 fs-14 fs-lg-6 me-6 text-natural-50"
+                    >電子郵件</span
+                  >
+                  <span class="fw-medium text-black fs-14 fs-lg-6"
+                    >contact@workway.tw</span
+                  >
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex">
+                  <span
+                    class="fw-bold text-nowrap w-25 fs-14 fs-lg-6 me-6 text-natural-50"
+                    >成立時間</span
+                  >
+                  <span class="fw-medium text-black fs-14 fs-lg-6"
+                    >2023 年 6 月</span
+                  >
+                </div>
+              </li>
+              <li class="list-group-item border-bottom">
+                <div class="d-flex">
+                  <span
+                    class="fw-bold text-nowrap w-25 fs-14 fs-lg-6 me-6 text-natural-50"
+                    >統一編號</span
+                  >
+                  <span class="fw-medium text-black fs-14 fs-lg-6"
+                    >83149276</span
+                  >
+                </div>
+              </li>
+            </ul>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/map.png?raw=true"
+              alt="map"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="custom-bg-xl"></div>
+      <div class="container-lg py-8">
+        <div class="row">
+          <div class="col-12">
+            <div class="bg-primary card-rounded px-4 py-6 px-lg-8 py-lg-9">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/logo-icon-w.svg"
+                alt=""
+                class="icon-w mb-6"
+              />
+              <div class="hero-content-line mb-4 mb-lg-6">
+                <h2 class="fs-lg-2 fs-3 text-white fw-bold">
+                  邁向你真正想過的生活，從這裡開始
+                </h2>
+                <p class="fs-6 fs-lg-18 text-white mb-6">
+                  第一次諮詢只要 30 分鐘，可能改變你未來 30 年的生活方式
+                </p>
+              </div>
+              <div class="hero-contact d-lg-flex">
+                <div class="contact me-auto d-lg-flex mb-6">
+                  <div
+                    class="contact-phone me-lg-6 text-white d-flex align-items-center flex-lg-nowrap mb-4 mb-lg-0"
+                  >
+                    <span class="me-2 material-symbols-outlined"> call </span>
+                    <p class="fs-lg-5 fs-18">0800-123-123</p>
+                  </div>
+                  <div
+                    class="contact-mail text-white d-flex align-items-center"
+                  >
+                    <span class="me-2 material-symbols-outlined"> mail </span>
+                    <p class="fs-lg-5 fs-18">Sample@mail.com</p>
+                  </div>
+                </div>
+                <button class="btn btn-dark px-lg-5 py-3">
+                  預約免費職涯探索
+                  <span class="material-icons-outlined align-bottom">
+                    keyboard_arrow_right
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-light bg-natural-95 py-6 py-lg-9 border-top">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="footer navbar-nav-list" id="navbarNav">
+      <ul
+        class="navbar-nav mb-lg-0 mx-lg-auto d-flex flex-row flex-wrap justify-content-center mb-2"
+      >
+        <li class="nav-item">
+          <a class="nav-link active px-4" href="/pages/sever.html">服務方案</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/about.html">關於職旅</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/contact.html">聯絡我們</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/policy.html">隱私權政策</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="/pages/user-role.html">用戶條款</a>
+        </li>
+      </ul>
+    </div>
+    <p class="text-natural-50 fs-14">
+      Copyright © 2025 職旅 workway. All rights reserved.
+    </p>
+  </div>
+</nav>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const headerGuest = document.getElementById("header-guest");
+        const headerUser = document.getElementById("header-user");
+        const loginModal = document.getElementById("login");
+        const loginForm = document.querySelector("#login form");
+
+        // 在頁面載入時，直接強制設定 display 屬性，確保只有訪客導覽列顯示
+        headerGuest.style.display = "block";
+        headerUser.style.display = "none";
+
+        // 輔助函式：切換導覽列狀態
+        function setLoggedInState(isLoggedIn) {
+          if (isLoggedIn) {
+            headerGuest.style.display = "none";
+            headerUser.style.display = "block";
+          } else {
+            headerGuest.style.display = "block";
+            headerUser.style.display = "none";
+          }
+        }
+
+        // 處理登入表單提交事件
+        if (loginForm) {
+          loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // 模擬登入成功後的操作 (實際專案中，這裡應放入 AJAX 請求)
+            setLoggedInState(true);
+
+            // 1. 關閉模態框
+            const bsModal = bootstrap.Modal.getOrCreateInstance(loginModal);
+            bsModal.hide();
+
+            // 2. 關閉訪客導覽列的滿版選單
+            const navbarCollapse = headerGuest.querySelector("#navbarNav");
+            if (navbarCollapse) {
+              const bsCollapse =
+                bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+              bsCollapse.hide();
+            }
+
+            // 3. 模擬頁面跳轉 (如果需要)
+            // window.location.href = '/pages/user.html';
+          });
+        }
+
+        // 處理模態框關閉事件 (如果使用者點擊 X 或背景)
+        if (loginModal) {
+          loginModal.addEventListener("hide.bs.modal", () => {
+            // 確保在模態框關閉時，訪客導覽列的滿版選單也關閉
+            const navbarCollapse = headerGuest.querySelector("#navbarNav");
+            if (navbarCollapse) {
+              const bsCollapse =
+                bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+              bsCollapse.hide();
+            }
+          });
+        }
+
+        // 處理使用者導覽列中的登出邏輯 (假設你有登出按鈕)
+        const logoutBtn = headerUser.querySelector(".logout-btn");
+        if (logoutBtn) {
+          logoutBtn.addEventListener("click", () => {
+            setLoggedInState(false);
+            // 頁面跳轉回首頁
+            // window.location.href = '/pages/index.html';
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
