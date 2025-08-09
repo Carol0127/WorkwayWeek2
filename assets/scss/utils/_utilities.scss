@@ -33,20 +33,43 @@ $utilities: map-merge(
   }
 }
 
-.btn-dark:hover {
-  border: 1px solid $secondary-50;
-  color: $natural-10;
-  background-color: $secondary-50;
+.w-90 {
+  width: 90%;
 }
 
-.btn-outline:hover {
-  border: 1px solid $natural-90;
-  background-color: $natural-90;
-  color: $natural-10;
+.custom-container {
+  max-width: 1608px;
+  margin-left: auto;
+  padding: 0px;
 }
 
-.btn {
+.text-truncate-multi {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+// 背景種類
+.bg-dot {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/service/banner-bg-pc.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gradient-ball {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/gradient-ball.png?raw=true);
+  background-position: center 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
   @media (max-width: 768px) {
-    border-radius: 12px;
+    background-position: center 8px;
   }
 }
+
+.bg-grid {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/bg-grid.png?raw=true);
+  background-repeat: repeat;
+  background-size: auto;
+}
+// ------------------
